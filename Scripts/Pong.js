@@ -97,7 +97,7 @@ function MoveBall(){
     Ball.x += Ball.XVelocity
     Ball.y += Ball.YVelocity
 
-    if(Ball.y <= (0 + grid) || Ball.y >= (canvas.height - grid)){
+    if(Ball.y <= 0 || Ball.y >= (canvas.height - grid)){
         Ball.YVelocity *= -1
     }
     if(Ball.x <= (PlayerLeft.x + grid)){
